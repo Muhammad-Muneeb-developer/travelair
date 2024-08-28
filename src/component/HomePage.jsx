@@ -2,8 +2,12 @@ import React, { /* useState */ useRef } from "react";
 import "./HomePage.css";
 
 import emailjs from "@emailjs/browser";
-import image1 from "./Z_slider_image.jpg";
-
+import image1 from "./TRAVAL_IMAGE2.jpeg";
+import image2 from './TRAVAL_IMAGE4.jpg';
+import image3 from './TRAVAL_IMAGE3.jpg';
+import image4 from './TRAVAL_IMAGE1.jpg';
+import icon from './icon.png';
+import logo from './Logo-image.jpeg'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -19,17 +23,21 @@ const HomePage = () => {
  
   const images = [
     image1,
+    image2,
+    image3, 
+    image4,
     image1,
+    image2,
+    image3, 
+    image4,
     image1,
+    image2,
+    image3,
+    image4,
     image1,
-    image1,
-    image1,
-    image1,
-    image1,
-    image1,
-    image1,
-    image1,
-    image1,
+    image2,
+    image3,
+    image4,
   ];
 
 
@@ -57,11 +65,10 @@ const HomePage = () => {
       <div className="main-div">
         <div className="NavbarSection">
           <div className="logoSection">
-            Destination <br /> travel&Tours
+            <img src={logo} alt="" />
           </div>
           <div className="buttonSection">
-            <button>Login</button>
-            <button>Create Account</button>
+           <img src={icon} alt="" />
           </div>
         </div>
         <div className="manu-button">
